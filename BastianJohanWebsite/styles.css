@@ -807,11 +807,17 @@ img {
   .services__wrapper {
     grid-template-columns: 1fr 1fr;
   }
+  .services h1 {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 850px) {
   .services__wrapper {
     grid-template-columns: 1fr;
+  }
+  .services h1 {
+    font-size: 2rem;
   }
 }
 
@@ -1297,14 +1303,14 @@ input[type=submit]:hover {
     font-size: 4rem;
   }
   .contact__content h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 3rem;
   }
   .contact__container h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .contact__container p {
-    margin-top: 2rem;
+    margin-top: 1.2rem;
   }
 
   .contact__btn {
@@ -1390,6 +1396,17 @@ input[type=submit]:hover {
   .spotify__content {
     text-align: center;
     padding: 2rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .spotify__container {
+    grid-template-columns: 1fr;
+  }
+  .spotify__content {
+    text-align: center;
+    padding: 0rem;
     width: 100%;
   }
 }
