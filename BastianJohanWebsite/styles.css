@@ -1394,6 +1394,7 @@ input[type=submit]:hover {
     grid-template-columns: 1fr;
   }
   .spotify__content {
+    margin: auto;
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -1406,7 +1407,8 @@ input[type=submit]:hover {
     padding: 2rem 1rem;
   }
   .spotify__content {
-    margin-top: 1rem;
+    margin: 1rem auto;
+    padding: 0rem;
     text-align: center;
     width: 100%;
   }
