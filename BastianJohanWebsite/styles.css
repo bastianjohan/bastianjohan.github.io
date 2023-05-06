@@ -530,6 +530,10 @@ img {
 #card-3 {
   background: rgba(0, 0, 0, 0);
 }
+#card-4 {
+  width: 600px;
+  background: rgba(0, 0, 0, 0);
+}
 
 #card__services-1 {
   width: 450px;
@@ -595,6 +599,12 @@ img {
   .main__content--services p {
     font-size: 1.5rem;
     margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #card-4 {
+    width: 450px;
   }
 }
 
@@ -686,6 +696,10 @@ img {
     width: 100%;
   }
   #card__services-4 {
+    width: 100%;
+  }
+
+  #card-4 {
     width: 100%;
   }
 
