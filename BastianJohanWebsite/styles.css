@@ -605,6 +605,13 @@ img {
     margin-left: 0;
   }
 
+  .main--services {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0.5rem 30px;
+  }
+
   .main__img--card {
     background-color: rgba(0, 0, 0, 0);
     display: flex;
@@ -647,8 +654,8 @@ img {
   }
 
   .main__container--services {
-    background-image: url("BackgroundBeige5.png");
-    border-radius: 0px;
+    /* background-image: url("BackgroundBeige5.png");
+    border-radius: 0px; */
     width: 100%;
     padding: 0px;
     margin: 0 auto;
@@ -657,17 +664,17 @@ img {
   .main__content--services h1 {
     padding: 0px;
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin: 2rem 1rem;
   }
   .main__content--services h2 {
     padding: 0px;
     font-size: 1.5rem;
-    margin: 2rem 4.5rem;
+    margin: 2rem 1rem;
   }
   .main__content--services p {
     padding: 0px;
     font-size: 1.2rem;
-    margin: 2rem 4.5rem;
+    margin: 2rem 1rem;
   }
 
   #card__services-1 {
