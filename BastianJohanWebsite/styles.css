@@ -649,6 +649,19 @@ img {
     padding: 12px, 36px;
     margin: 2.5rem 0;
   }
+
+  #card__services-1 {
+    width: 350px;
+  }
+  #card__services-2 {
+    width: 350px;
+  }
+  #card__services-3 {
+    width: 350px;
+  }
+  #card__services-4 {
+    width: 350px;
+  }
 }
 
 /* Services Section */
