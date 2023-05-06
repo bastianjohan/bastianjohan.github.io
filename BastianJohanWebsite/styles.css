@@ -1406,6 +1406,7 @@ input[type=submit]:hover {
     padding: 2rem 1rem;
   }
   .spotify__content {
+    margin-top: 1rem;
     text-align: center;
     padding: 5px;
     width: 100%;
