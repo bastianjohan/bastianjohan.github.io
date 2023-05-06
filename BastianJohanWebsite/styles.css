@@ -774,7 +774,7 @@ img {
 .services__card:nth-child(1) {
   background-image: url(Pictures/Setup.jpg);
   border: 5px solid;
-  border-color: rgba(var(--darkblue-rgb), 1);
+  border-color: var(--lightpurple-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -783,7 +783,7 @@ img {
 .services__card:nth-child(2) {
   background-image: url(Pictures/BG_1.jpg);
   border: 5px solid;
-  border-color: rgba(var(--darkblue-rgb), 1);
+  border-color: var(--lightpurple-color);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -792,7 +792,7 @@ img {
 .services__card:nth-child(3) {
   background-image: url(Pictures/GameScoringPic.png);
   border: 5px solid;
-  border-color: rgba(var(--darkblue-rgb), 1);
+  border-color: var(--lightpurple-color);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
