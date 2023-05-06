@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bastian Johan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <script src="../Library/p5.min.js"></script>
+    <script src="../Library/addons/p5.sound.min.js"></script>
+    <script src="../Library/socket_io.js"></script>
+    <script src="../oscLib.js"></script>
+
+    <script src="WebpageAbout.js"></script>
+
+  <!-- <style> body {padding: 0; margin: 0; background-color:#DDDDDD; } 
+  </style> -->
+  </head>
+  <body>
+    <!-- Navbar Section-->
+    <nav class="navbar" id="navbar">
+      <div class="navbar__container">
+        <!-- <a href="#home" id="navbar__logo">Bastian Johan</a> -->
+        <a href="#home" id="navbar__logo"><img src="Logo_PNG_Crop.png" alt="Logo" id="BJ__logo">astian Johan</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <!-- <a href="index.html" class="navbar__links" id="home-page">Home</a> -->
+            <span onclick="transitionToPage('index.html')" class="navbar__links" id="home-page">Home</span>
+          </li>
+          <li class="navbar__item">
+            <!-- <a href="html_aboutpage.html" class="navbar__links" id="home-page">About</a> -->
+            <span onclick="transitionToPage('html_aboutpage.html')" class="navbar__links" id="home-page">About</span>
+          </li>
+          <li class="navbar__item">
+            <!-- <a href="html_workpage.html" class="navbar__links" id="home-page">Work</a> -->
+            <span onclick="transitionToPage('html_workpage.html')" class="navbar__links" id="home-page">Work</span>
+          </li>
+          <li class="navbar__item">
+            <!-- <a href="html_servicespage.html" class="navbar__links" id="home-page">Services</a> -->
+            <span onclick="transitionToPage('html_servicespage.html')" class="navbar__links" id="home-page">Services</span>
+          </li>
+          <li class="navbar__item">
+            <!-- <a href="html_contactpage.html" class="navbar__links" id="home-page">Contact</a> -->
+            <span onclick="transitionToPage('html_contactpage.html')" class="navbar__links" id="home-page">Contact</span>
+          </li>
+          <!-- <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Sign Up</a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+
+    <!-- About Section-->
+    <div class="main">
+      <div class="main__container" id="main__about">
+        <div class="main__img--container" id="about__container">
+          <div class="main__img--card" id="card-3"><i class="fas fa-layer-group"></i>
+            <img src="Pictures/Website.jpg" alt="Picture Profile 3">
+          </div>
+        </div>
+        <div class="main__content" id="about__container">
+          <h1>About me</h1>
+          <h2>Composer & Musician</h2>
+          <p>My name is Bas Boerboom, I am a musician from the Netherlands, and I go by the name Bastian Johan.</p>
+          <p>From an early age I started playing guitar and piano. Nowadays I work as a composer and producer. 
+            Mixing my classical piano background with my love for rock music, I write hybrid music ranging from intimite to epic.</p>
+          <p>My service consists of writing, recording and mixing music. 
+            I work 90% "in the box" using orchestral libraries supported by recording guitars and synths. 
+            For more information feel free to send an e-mail!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section-->
+    <div class="footer__container">
+      <div class="footer__links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Links</h2>
+            <span onclick="transitionToPage('index.html')">Home</span>
+            <span onclick="transitionToPage('html_aboutpage.html')">About</span>
+            <span onclick="transitionToPage('html_workpage.html')">Work</span>
+            <span onclick="transitionToPage('html_servicespage.html')">Service</span>
+            <span onclick="transitionToPage('html_contactpage.html')">Contact</span>
+          </div>
+          <div class="footer__link--items">
+            <h2>Services</h2>
+            <a href="/sign-up">Comp & Prod</a>
+            <a href="/sign-up">Sound design</a>
+            <a href="/sign-up">CSD</a>
+            <a href="/sign-up">Guitar Lessons</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <!-- <a href="/" id="footer__logo">Bastian Johan</a> -->
+            <h1>Bastian Johan</h1>
+          </div>
+          <p class="website__rights">© Bastian Johan 2023. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link"><img class="social__icon--style" src="Socials/4202090_instagram_logo_social_social media_icon.png" alt="Instagram"></a>
+            <a href="/" class="social__icon--link"><img class="social__icon--style" src="Socials/4202000_tweet_twitter_logo_social_social media_icon.png" alt="Twitter"></a>
+            <a href="/" class="social__icon--link"><img class="social__icon--style" src="Socials/4202041_video_youtube_logo_social_social media_icon.png" alt="Youtube"></a>
+            <a href="/" class="social__icon--link"><img class="social__icon--style" src="Socials/4202068_spotify_logo_social_social media_icon.png" alt="Spotify"></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="MainClass.js"></script>
+  </body>
+</html>
