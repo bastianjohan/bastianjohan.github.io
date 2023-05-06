@@ -2,10 +2,9 @@ let init = 10;
 let array = [];
 let arrayd = [];
 let scaler = [];
-var x = innerHeight;
+// var x = innerHeight;
 
-let arraysize = (innerWidth*.86)/20;
-
+let arraysize = innerWidth/20;
 let fillOp = 100;
 
 function setup(){
@@ -23,11 +22,10 @@ function setup(){
 }
 
 function draw(){
-  arraysize = innerWidth/20;
   clear();
-  let x = about.offsetWidth;
+  let x = services.offsetWidth - 12;
   let y = about.offsetHeight;
-  canvas = createCanvas(x, y + 50);
+  canvas = createCanvas(innerWidth, y + 50);
   canvas.position(0, navbar.offsetHeight);
 
   noStroke();
@@ -67,9 +65,9 @@ function draw(){
 
 function fBar(x, y, i, a, aS, s){
   fill(188, 158, 134, fillOp);
-  rect(x/aS*i + (x/aS / 8) + innerWidth*.07, y, x/aS / 2, -a[i] * s[i], 0, 0, 4, 4);
+  rect(x/aS*i + (innerWidth-x)/2 - 6 - x/aS / 4, y, x/aS / 2, -a[i] * s[i], 0, 0, 4, 4);
   fill(219, 203, 190, fillOp*0.6);
-  rect(x/aS*i + (x/aS / 8) + innerWidth*.07, y, x/aS / 2, a[i] * s[i], 0, 0, 4, 4);
+  rect(x/aS*i + (innerWidth-x)/2 - 6 - x/aS / 4, y, x/aS / 2, a[i] * s[i], 0, 0, 4, 4);
 }
 
 let valuesArr = [];
