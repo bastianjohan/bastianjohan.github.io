@@ -606,6 +606,15 @@ img {
     height: 250px;
   }
 
+  #about__container p {
+    line-height: 1.4;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: normal;
+  }
+
   .fa-users, .fa-layer-group {
     font-size: 4rem;
   }
