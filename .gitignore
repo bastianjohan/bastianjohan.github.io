@@ -3,3 +3,5 @@ node_modules/
 package-lock.json
 .filesToUpdate.txt
 .updateState.txt
+oscLib.js
+oscServer.js
