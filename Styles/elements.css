@@ -314,7 +314,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  background-color: var(--slateblue);
+  /* background-color: var(--slateblue); */
   transition: 0.3s ease-in;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
@@ -323,6 +323,7 @@
   font-family: poppinsFont;
   text-align: center;
   margin-top: 3rem;
+  font-size: 1.6vw;
 }
 
 .indexservices__card p {
@@ -330,6 +331,7 @@
   font-style: italic;
   font-size: 20px;
   padding: 0 1rem;
+  font-size: 1.2vw;
 }
 
 .indexservices__btn {
@@ -360,6 +362,35 @@
   cursor: pointer;
 }
 
+#indexservices-card1 {
+  background-image: url(../Pictures/Services__CompProd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+#indexservices-card2 {
+  background-image: url(../Pictures/Services__SoundDesign.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+#indexservices-card3 {
+  background-image: url(../Pictures/Services__CreativeSystem.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+#indexservices-card4 {
+  background-image: url(../Pictures/Services__GuitarLessons.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 1200px) {
   .indexservices__wrapper {
     display: grid;
@@ -369,6 +400,13 @@
     width: 90%;
     margin: auto;
     margin-bottom: 1rem;
+  }
+
+  .indexservices__card h2 {
+    font-size: 1.8rem;
+  }
+  .indexservices__card p {
+    font-size: 1.6rem;
   }
 }
 
@@ -382,6 +420,13 @@
   .indexservices__wrapper {
     width: 100%;
     padding: 0 1rem;
+  }
+
+  .indexservices__card h2 {
+    font-size: 1.2rem;
+  }
+  .indexservices__card p {
+    font-size: 1rem;
   }
   .indexservices__card {
     width: 100%;
