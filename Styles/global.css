@@ -365,3 +365,15 @@ body {
     font-size: 0.8rem;
   }
 }
+
+.breakline {
+  height: 1rem;
+  background-color: var(--nearwhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line {
+  width: 100%;
+  border-bottom: 2px solid var(--dallasbrown);
+}
