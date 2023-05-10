@@ -381,7 +381,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+.breakline__services {
+  height: 1rem;
+  margin: 0 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .line {
   width: 100%;
   border-bottom: 2px solid var(--dallasbrown);
+}
+@media screen and (max-width: 1200px) {
+  .breakline__services {
+    margin: 0 1rem;
+  }
 }
