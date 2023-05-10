@@ -1084,3 +1084,11 @@ input[type=submit]:hover {
     margin: 2.5rem 0;
   }
 }
+
+.aboutpage {
+  margin-top: 3rem;
+}
+
+#aboutpage__content {
+  justify-content: space-evenly;
+}
