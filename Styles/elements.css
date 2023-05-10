@@ -323,7 +323,7 @@
   font-family: poppinsFont;
   text-align: center;
   margin-top: 3rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .indexservices__card p {
@@ -333,7 +333,7 @@
   font-size: 20px;
   padding: 0 1rem;
   margin: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .indexservices__btn {
@@ -408,7 +408,7 @@
     font-size: 1.8rem;
   }
   .indexservices__card p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 
