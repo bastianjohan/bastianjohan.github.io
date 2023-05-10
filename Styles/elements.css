@@ -221,20 +221,20 @@
     margin: 1rem auto;
     padding-left: 0;
     padding: 16px;
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .main__content h2 {
     margin: 0rem auto;
     padding-left: 0;
     padding: 16px;
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .main__content p {
     margin: 0rem auto;
     margin-bottom: 1rem;
     padding-left: 0;
     padding: 16px;
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   .main__image {
@@ -784,20 +784,20 @@
     margin: 2rem auto;
     padding-left: 0;
     padding: 16px;
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .indexcontact__content h2 {
     margin: 0rem auto;
     padding-left: 0;
     padding: 16px;
-    font-size: 10vw;
+    font-size: 8vw;
   }
   .indexcontact__content p {
     margin: 0rem auto;
     margin-bottom: 1rem;
     padding-left: 0;
     padding: 16px;
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
   .indexcontact__image {
