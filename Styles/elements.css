@@ -607,9 +607,9 @@
     margin: 1rem 0;
   }
   .indexyoutube__content p {
-    font-size: 6vw;
+    font-size: 4vw;
     padding: 0;
-    margin-bottom: 4vw;
+    margin-bottom: 1rem;
   }
 
   .yt__container {
