@@ -27,8 +27,16 @@
         <li class="navbar__item">
           <span onclick="transitionToPage('work.html')" class="navbar__links">Work</span>
         </li>
-        <li class="navbar__item">
+        <li class="navbar__item" id="dropdown">
           <span onclick="transitionToPage('services.html')" class="navbar__links">Services</span>
+          <ul id="dropdown-menu">
+            <li>
+              <span onclick="transitionToPage('gitaarlessen.html')" class="navbar__links">Guitar Lessons</span>
+            </li>
+          </ul>
+        </li>
+        <li id="dropdown-mobile">
+          <span onclick="transitionToPage('gitaarlessen.html')" class="navbar__links">Guitar Lessons</span>
         </li>
         <li class="navbar__item">
           <span onclick="transitionToPage('contact.html')" class="navbar__links">Contact</span>

@@ -27,8 +27,16 @@
         <li class="navbar__item">
           <span onclick="transitionToPage('work.html')" class="navbar__links">Work</span>
         </li>
-        <li class="navbar__item">
+        <li class="navbar__item" id="dropdown">
           <span onclick="transitionToPage('services.html')" class="navbar__links">Services</span>
+          <ul id="dropdown-menu">
+            <li>
+              <span onclick="transitionToPage('gitaarlessen.html')" class="navbar__links">Guitar Lessons</span>
+            </li>
+          </ul>
+        </li>
+        <li id="dropdown-mobile">
+          <span onclick="transitionToPage('gitaarlessen.html')" class="navbar__links">Guitar Lessons</span>
         </li>
         <li class="navbar__item">
           <span onclick="transitionToPage('contact.html')" class="navbar__links">Contact</span>
@@ -38,18 +46,63 @@
   </nav>
 
   <div class="aboutpage">
-    <div class="main__container">
-      <div class="main__image">
-        <div class="main__image--card"></i>
-					<img src="Pictures/PF.jpg" alt="Picture Profile 1">
+    <div class="services__container">
+      <div class="services__subject">
+        <div class="services__title"></i>
+					<h1>Composition & Production</h1>
 				</div>
       </div>
-      <div class="main__content" id="aboutpage__content">
-        <h1>'Services' Coming soon</h1>
+      <div class="services__content" id="aboutpage__content">
+        <h2>Production for artists</h2>
+        <p>- Instrumental track</p>
+        <p>- Mixing & Mastering</p>
+        <h2>Media Composition</h2>
+        <p>- Film</p>
+        <p>- Documentary</p>
+        <p>- Background tracks</p>
       </div>
     </div>
+    <div class="breakline__servicepage">
+      <div class="line"></div>
+    </div>
   </div>
-
+  <div class="aboutpage">
+    <div class="services__container">
+      <div class="services__subject">
+        <div class="services__title"></i>
+					<h1>Sound design</h1>
+				</div>
+      </div>
+      <div class="services__content" id="aboutpage__content">
+        <h2>Foley</h2>
+        <h2>Sound effects</h2>
+        <h2>Soundscapes</h2>
+      </div>
+    </div>
+    <div class="breakline__servicepage">
+      <div class="line"></div>
+    </div>
+  </div>
+  <div class="aboutpage">
+    <div class="services__container">
+      <div class="services__subject">
+        <div class="services__title"></i>
+					<h1>Creative System Design</h1>
+				</div>
+      </div>
+      <div class="services__content" id="aboutpage__content">
+        <h2>Music & audio for games</h2>
+        <p>- Fmode</p>
+        <p>- Wwise</p>
+        <h2>Interactive music</h2>
+        <p>- Instalations</p>
+      </div>
+    </div>
+    <div class="breakline__servicepage">
+      <div class="line"></div>
+    </div>
+  </div>
+  
   <div class="footer__container">
     <div class="footer__links">
       <div class="footer__link--wrapper">
