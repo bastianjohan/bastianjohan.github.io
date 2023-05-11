@@ -879,8 +879,7 @@ input[type=submit]:hover {
 }
 
 .contact__head h2 {
-  font-size: 3rem;
-  font-size: 60px;
+  font-size: 2rem;
   background: linear-gradient(to right, #564da4, #537ea1);
   background: -webkit-linear-gradient(to right, #564da4, #537ea1);
   -webkit-background-clip: text;
@@ -897,7 +896,7 @@ input[type=submit]:hover {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color:transparent;
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 
@@ -949,8 +948,8 @@ input[type=submit]:hover {
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color:transparent;
   margin-top: 1rem;
-  font-size: 2rem;
-  font-weight: 700;
+  padding-left: 1rem;
+  font-size: 1.6rem;
 }
 
 .contact__btn {
@@ -1048,19 +1047,25 @@ input[type=submit]:hover {
   }
 
   .contact__container h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 2rem;
   }
   .contact__container h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .contact__container p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 1rem;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .contact {
+    padding: 1rem 0;
+  }
+  .contact__container {
+    padding: 0 2rem;
+  }
 
   .contact__column {
     margin-top: 4rem;
@@ -1069,14 +1074,18 @@ input[type=submit]:hover {
     font-size: 4rem;
   }
   .contact__content h1 {
-    font-size: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 6vw;
   }
   .contact__container h2 {
-    font-size: 1.5rem;
+    font-size: 6vw;
   }
   .contact__container p {
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
+    font-size: 4vw;
+  }
+
+  .contact__column label {
+    font-size: 5vw;
   }
 
   .contact__btn {
@@ -1240,9 +1249,14 @@ input[type=submit]:hover {
     padding: 16px;
     font-size: 6vw;
   }
+  .services__content h2 {
+    margin: 0.5rem auto;
+    padding-left: 0;
+    padding: 16px;
+    font-size: 5vw;
+  }
   .services__content p {
     margin: 0rem auto;
-    margin-bottom: 1rem;
     padding-left: 0;
     padding: 16px;
     font-size: 4vw;

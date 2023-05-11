@@ -38,3 +38,14 @@ document.addEventListener('scroll', () =>{
     header.classList.remove('scrolled');
   }
 })
+document.addEventListener('scroll', () =>{
+  var pathname = window.location.href;
+  const header = document.querySelector('#dropdown-menu');
+  if(pathname == 'file:///C:/Users/Bas/OneDrive/Documenten/GitHub/bastianjohan.github.io/index.html'){
+    if(window.scrollY > 0){
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  }
+})
