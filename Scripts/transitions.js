@@ -42,7 +42,7 @@ document.addEventListener('scroll', () =>{
   var pathname = window.location.href;
   console.log(pathname);
   const header = document.querySelector('#dropdown-menu');
-  if(pathname == '/index.html'){
+  if(pathname == 'https://bastianjohan.nl/index.html' || 'https://bastianjohan.nl/'){
     if(window.scrollY > 0){
       header.classList.add('scrolled');
     } else {
