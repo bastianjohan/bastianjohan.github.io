@@ -40,7 +40,6 @@ document.addEventListener('scroll', () =>{
 })
 document.addEventListener('scroll', () =>{
   var pathname = window.location.href;
-  console.log(pathname);
   const header = document.querySelector('#dropdown-menu');
   if(pathname == 'https://bastianjohan.nl/index.html' || 'https://bastianjohan.nl/'){
     if(window.scrollY > 0){
