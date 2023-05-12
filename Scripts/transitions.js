@@ -40,8 +40,9 @@ document.addEventListener('scroll', () =>{
 })
 document.addEventListener('scroll', () =>{
   var pathname = window.location.href;
+  console.log(pathname);
   const header = document.querySelector('#dropdown-menu');
-  if(pathname == 'bastianjohan.nl/index.html'){
+  if(pathname == '/index.html'){
     if(window.scrollY > 0){
       header.classList.add('scrolled');
     } else {
