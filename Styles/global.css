@@ -428,6 +428,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.breakline__work {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .breakline__services {
   height: 1rem;
   margin: 0 3rem;
