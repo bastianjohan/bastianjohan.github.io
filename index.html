@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bastian Johan</title>
+  <title>Bas Boerboom</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel = "stylesheet" href = "Styles/elements.css">
   <link rel = "stylesheet" href = "Styles/global.css">
 </head>
-<body>
+<body class="body__basboerboom">
   <nav class="navbar">
     <div class="navbar__container">
-      <a href="index.html" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">astian Johan</a> 
+      <a href="index.html" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">as Boerboom</a> 
       <div class="navbar__toggle" id="mobile-menu">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -19,27 +19,7 @@
       </div>
       <ul class="navbar__menu">
         <li class="navbar__item">
-          <span onclick="transitionToPage('index.html')" class="navbar__links">Home</span>
-        </li>
-        <li class="navbar__item">
-          <span onclick="transitionToPage('about.html')" class="navbar__links">About</span>
-        </li>
-        <li class="navbar__item">
-          <span onclick="transitionToPage('work.html')" class="navbar__links">Work</span>
-        </li>
-        <li class="navbar__item" id="dropdown">
-          <span onclick="transitionToPage('services.html')" class="navbar__links">Services</span>
-          <ul id="dropdown-menu">
-            <li>
-              <span onclick="transitionToPage('gitaarlessen.html')" class="navbar__links">Guitar Lessons</span>
-            </li>
-          </ul>
-        </li>
-        <li id="dropdown-mobile">
-          <span onclick="transitionToPage('gitaarlessen.html')" class="navbar__links">Guitar Lessons</span>
-        </li>
-        <li class="navbar__item">
-          <span onclick="transitionToPage('contact.html')" class="navbar__links">Contact</span>
+          <span onclick="transitionToPage('bastianjohan.html')" class="navbar__links">Bastian Johan</span>
         </li>
       </ul>
 		</div>
@@ -47,144 +27,39 @@
 
 	<div class="hero">
 		<div class="hero__container">
-			<h1>Bastian Johan</h1>
+			<h1>Bas Boerboom</h1>
 			<h2>Musician | Producer | Composer</h2>
 		</div>
 	</div>
 
-	<div class="main">
-		<div class="main__container">
-			<div class="main__image">
-				<div class="main__image--card"></i>
+  <div class="flyer">
+		<div class="flyer__container">
+			<div class="flyer__image">
+				<div class="flyer__image--card"></i>
 					<img src="Pictures/PF.jpg" alt="Picture Profile 1">
 				</div>
 			</div>
-			<div class="main__content">
-				<h1>Bastian Johan</h1>
+			<div class="flyer__content">
+				<h1>Bas Boerboom</h1>
 				<h2>Composer & Musician</h2>
-				<p>My name is Bas Boerboom and I go by the name Bastian Johan
-
-        </p>
+				<p>My name is Bas Boerboom!</p>
         <p>From an early age I started playing guitar and piano. Nowadays I work as a composer and producer. 
           Mixing my classical background with my love for rock music, 
           I write orchestral music ranging from intimite to epic.
         </p>
-				<button class="main__btn"><a href="about.html">More about me</a></button>
+				<button class="flyer__btn"><a href="About_BasBoerboom.html">More about me</a></button>
 			</div>
 		</div>
 	</div>
 
-  <div class="indexservices" id="indexservices">
-    <div class="indexservices__title">
-      <div class="title__breakline">
-        <div class="title__line"></div>
-      </div>
-      <h1>My Services</h1>
-      <div class="title__breakline">
-        <div class="title__line"></div>
-      </div>
-    </div>
-    <div class="indexservices__wrapper">
-      <div class="indexservices__card" id="indexservices-card1">
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-        <p>Composition & Production</p>
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-      </div>
-      <div class="indexservices__card" id="indexservices-card2">
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-        <p>Foley & Ambience</p>
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-      </div>
-      <div class="indexservices__card" id="indexservices-card3">
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-        <p>interactive sound & music</p>
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-      </div>
-      <div class="indexservices__card" id="indexservices-card4">
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-        <p>Guitar Lessons</p>
-        <div class="breakline__services">
-          <div class="line"></div>
-        </div>
-      </div>
+  <div class="cardrow">
+    <div class="cardrow__wrapper">
+      <a href="Commercials.html" class="cardrow__card" id="cardrow-card1">Commercials</a>
+      <a href="Trailers.html" class="cardrow__card" id="cardrow-card2">Trailers</a>
+      <a href="Games.html" class="cardrow__card" id="cardrow-card3">Games</a>
+      <a href="Shortfilm.html" class="cardrow__card" id="cardrow-card4">Short Film</a>
     </div>
   </div>
-
-  <div class="breakline">
-    <div class="line"></div>
-  </div>
-
-  <div class="indexyoutube">
-    <div class="indexyoutube__container">
-      <div class="indexyoutube__wrapper">
-        <div class="indexyoutube__content">
-          <h1>Youtube</h1>
-          <p>On my youtube channel you can find my official releases 
-            and other experimental works. Here is a slideshow with a few
-          impressions.</p>
-        </div>
-        <section class="yt__container">
-          <div class="yt__slider__wrapper">
-            <div class="yt__slider">
-              <div class="yt__youtube__container" id="slide-1">
-                <iframe src="https://www.youtube-nocookie.com/embed/Q_tWoIkbYCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <!-- <img src="Pictures/picture1.png" alt="Car"> -->
-              </div>
-              <div class="yt__youtube__container" id="slide-2">
-                <!-- <img src="Pictures/picture2.png" alt="Cat"> -->
-                <iframe src="https://www.youtube-nocookie.com/embed/S1HmVyoOa_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div class="yt__youtube__container" id="slide-3">
-                <!-- <img src="Pictures/picture3.png" alt="Tree"> -->
-                <iframe src="https://www.youtube-nocookie.com/embed/sNm0TQ0zG3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-              <div class="yt__youtube__container" id="slide-4">
-                <!-- <img src="Pictures/picture3.png" alt="Tree"> -->
-                <iframe src="https://www.youtube-nocookie.com/embed/CSO5MUcC9kM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </div>
-            </div>
-            <div class="yt__slider__nav">
-              <a href="#slide-1"></a>
-              <a href="#slide-2"></a>
-              <a href="#slide-3"></a>
-              <a href="#slide-4"></a>
-            </div>
-          </div>
-        </section>
-      </div>
-    </div>
-  </div>
-
-  <div class="indexcontact">
-		<div class="indexcontact__container">
-			<div class="indexcontact__image">
-				<div class="indexcontact__image--card"></i>
-					<img src="Pictures/PF.jpg" alt="Picture Profile 1">
-				</div>
-			</div>
-			<div class="indexcontact__content">
-				<h1>Contact me</h1>
-        <p>My services consist of writing, recording and mixing music. You can recognize my sound by the use of
-          heavy guitars, orchestral sounds and synths. For more information feel free to send an e-mail!
-        </p>
-				<button class="indexcontact__btn"><a href="contact.html">Contact me</a></button>
-			</div>
-		</div>
-	</div>
 
   <div class="footer__container">
     <div class="footer__links">
@@ -192,30 +67,30 @@
         <div class="footer__link--items">
           <h2>Pages</h2>
           <a href="index.html">Home</a>
-          <a href="about.html">About</a>
+          <a href="About_BasBoerboom.html">About</a>
           <a href="work.html">Work</a>
           <a href="contact.html">Content</a>
         </div>
         <div class="footer__link--items">
-          <h2>Services</h2>
-          <a href="/">Composition</a>
-          <a href="/">Audio Design</a>
-          <a href="/">Interactive music</a>
-          <a href="/">Guitar Lessons</a>
+          <h2>Work</h2>
+          <a href="/Commercials.html">Commercials</a>
+          <a href="/Trailers.html">Trailers</a>
+          <a href="/Games.html">Games</a>
+          <a href="/Shortfilm.html">Short Film</a>
         </div>
       </div>
     </div>
     <section class="social__media">
       <div class="social__media--wrap">
         <div class="footer__logo">
-          <a href="index.html" id="footer__logo">Bastian Johan</a>
+          <a href="index.html" id="footer__logo">Bas Boerboom</a>
         </div>
-        <p class="website__rights">© Bastian Johan 2023. All rights reserved</p>
+        <p class="website__rights">© Bas Boerboom 2023. All rights reserved</p>
         <div class="social__icons">
           <a href="https://www.instagram.com/bastianjohanmusic/" class="social__icon--link"><img class="social__icon--style" src="Socials/4202090_instagram_logo_social_social media_icon.png" alt="Instagram"></a>
           <a href="" class="social__icon--link"><img class="social__icon--style" src="Socials/4202000_tweet_twitter_logo_social_social media_icon.png" alt="Twitter"></a>
-          <a href="https://www.facebook.com/profile.php?id=100073106121805" class="social__icon--link"><img class="social__icon--style" src="Socials/logo-facebookpng-32204.png" alt="Facebook"></a>
-          <a href="https://www.youtube.com/channel/UCI_uUXBH0Qjv4veOmt2hjQg" class="social__icon--link"><img class="social__icon--style" src="Socials/4202041_video_youtube_logo_social_social media_icon.png" alt="Youtube"></a>
+          <a href="https://www.facebook.com/bas.boerboom.9/" class="social__icon--link"><img class="social__icon--style" src="Socials/logo-facebookpng-32204.png" alt="Facebook"></a>
+          <a href="https://www.youtube.com/@basboerboom9328" class="social__icon--link"><img class="social__icon--style" src="Socials/4202041_video_youtube_logo_social_social media_icon.png" alt="Youtube"></a>
           <a href="https://open.spotify.com/artist/5CMJEBnmSphZLKjbpBJIH8?si=GPABIxnLRGaYuXZNiNl1kg" class="social__icon--link"><img class="social__icon--style" src="Socials/4202068_spotify_logo_social_social media_icon.png" alt="Spotify"></a>
         </div>
       </div>

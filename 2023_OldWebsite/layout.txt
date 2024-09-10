@@ -1,0 +1,44 @@
+Website Layout:
+
+-index.html
+    -Title
+    -About
+    -Work
+    -Services
+    -Contact
+    -Footer
+
+-About.html
+    -Story
+
+-Work.html
+    -Youtube
+    -Spotify
+
+-Services.html
+    -Comp & Prod
+    -Sound Design
+    -Interactive Music
+
+-GitaarLessen.html
+    -Informatie dingen
+    -Contact
+
+-Contact.html
+    -Contact form
+
+
+File Structure:
+
+-Root folder
+    -Pictures
+    -Scripts
+    -Socials
+    -Styles
+        -Fonts
+
+Mobile size: 480
+
+
+
+
