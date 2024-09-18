@@ -41,7 +41,7 @@ document.addEventListener('scroll', () =>{
 document.addEventListener('scroll', () =>{
   var pathname = window.location.href;
   const header = document.querySelector('#dropdown-menu');
-  if(pathname == 'https://bastianjohan.nl/index.html' || 'https://bastianjohan.nl/'){
+  if(pathname == 'https://basboerboom.nl/index.html' || 'https://basboerboom.nl/'){
     if(window.scrollY > 0){
       header.classList.add('scrolled');
     } else {

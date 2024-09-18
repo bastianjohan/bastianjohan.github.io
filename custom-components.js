@@ -1,6 +1,9 @@
 class FooterComponent extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
+      <div class="breakline">
+        <div class="line"></div>
+      </div>
       <footer>
         <div class="footer__container">
           <div class="footer__links">
@@ -43,3 +46,49 @@ class FooterComponent extends HTMLElement {
   }
 }
 customElements.define('footer-component', FooterComponent);
+
+class NavbarBBComponent extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="index.html" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">as Boerboom</a> 
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <span onclick="transitionToPage('bastianjohan.html')" class="navbar__links">Bastian Johan</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    `;
+  }
+}
+customElements.define('navbar_bb-component', NavbarBBComponent);
+
+class NavbarBJComponent extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="bastianjohan.html" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">astian Johan</a> 
+          <div class="navbar__toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <span onclick="transitionToPage('index.html')" class="navbar__links">Bas Boerboom</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    `;
+  }
+}
+customElements.define('navbar_bj-component', NavbarBJComponent);
