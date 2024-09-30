@@ -29,7 +29,7 @@ class FooterComponent extends HTMLElement {
               <div class="footer__logo">
                 <a href="/" id="footer__logo">Bas Boerboom</a>
               </div>
-              <p class="website__rights">bas.boerboom@hotmail.com | +31 (0) 6 39678458 | KvK: 94987637</p>
+              <p class="website__rights">bas.boerboom@hotmail.com | KvK: 94987637</p>
               <p class="website__rights">© Bas Boerboom 2023-2024. All rights reserved</p>
               <div class="social__icons">
                 <a href="https://www.instagram.com/bastianjohanmusic/" class="social__icon--link"><img class="social__icon--style" src="Socials/4202090_instagram_logo_social_social media_icon.png" alt="Instagram"></a>

@@ -591,7 +591,8 @@
   .mediablock__text ul {
     margin: 1rem 2rem;
   }
-
+}
+@media screen and (max-width: 480px) {
   #legals_page h1 {
     font-size: 4vw;
     margin: 0.6rem 0;
