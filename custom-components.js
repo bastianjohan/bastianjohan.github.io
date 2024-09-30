@@ -75,7 +75,7 @@ class NavbarBJComponent extends HTMLElement {
     this.innerHTML = `
       <nav class="navbar">
         <div class="navbar__container">
-          <a href="bastianjohan.html" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">astian Johan</a> 
+          <a href="/bastianjohan" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">astian Johan</a> 
           <div class="navbar__toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
