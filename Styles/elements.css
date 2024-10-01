@@ -30,6 +30,7 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
+    animation-delay: 250ms;
     animation: typing 1.6s;
   }
   
@@ -37,6 +38,7 @@
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
+    animation-delay: 250ms;
     animation: typing 1.2s steps(3);
   }
 }

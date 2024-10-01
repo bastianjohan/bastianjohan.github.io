@@ -28,11 +28,13 @@
 }
 
 .body__basboerboom {
+  background-color: black;
   background-image:
     radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
     url("../Pictures/Studio.jpg");
 }
 .body__bastianjohan {
+  background-color: black;
   background-image:
     radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
     url("../Pictures/BergenBenen.jpg");
