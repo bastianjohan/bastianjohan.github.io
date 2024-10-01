@@ -14,6 +14,10 @@
   font-size: 3.5vw;
   font-weight: 100;
   color: var(--nearwhite);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1.6s;
 }
 
 .hero h2 {
@@ -23,6 +27,14 @@
   font-size: 2vw;
   font-weight: 100;
   color: var(--nearwhite);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 1.2s steps(3);
+}
+
+@keyframes typing {
+  from { width: 0 }
 }
 
 @media screen and (max-width: 1200px) {
@@ -77,6 +89,14 @@
   border-top-right-radius: 10px;
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
+  transform: translateX(40px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.flyer__content.visible {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .flyer__content h1 {
@@ -123,6 +143,14 @@
 
 .flyer__image {
   margin: auto 3rem;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.flyer__image.visible {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .flyer__image--card {
@@ -471,10 +499,7 @@
 }
 #mediablock__item-center {
   background-color: var(--nearwhite);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 #legals_page h1 {
@@ -569,10 +594,7 @@
   }
   #mediablock__item-center {
     background-color: var(--nearwhite);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 10px;
   }
 
   .mediablock__text h1 {

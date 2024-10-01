@@ -21,15 +21,6 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
-// Show active menu when scrolling
-// const highlightMenu = () => {
-//   const elem = document.querySelector('.highlight');
-//   const homeMenu = document.querySelector('#home-page');
-//   const aboutMenu = document.querySelector('#about-page');
-//   const servicesMenu = document.querySelector('#services-page');
-//   let scrollPos = windows.scrollY;
-// }
-
 document.addEventListener('scroll', () =>{
   const header = document.querySelector('.navbar');
   if(window.scrollY > 0){
@@ -49,3 +40,29 @@ document.addEventListener('scroll', () =>{
     }
   }
 })
+
+const flyersContent = document.querySelectorAll(".flyer__content");
+const flyersImg = document.querySelectorAll(".flyer__image");
+
+document.addEventListener('scroll', function(){
+  flyersContent.forEach(flyer => {
+    if(isInView(flyer)){
+      flyer.classList.add("visible");
+    } else {
+      flyer.classList.remove("visible");
+    }
+  })
+  flyersImg.forEach(flyerImg => {
+    if(isInView(flyerImg)){
+      flyerImg.classList.add("visible");
+    } else {
+      flyerImg.classList.remove("visible");
+    }
+  })
+})
+
+function isInView(element){
+  const rect = element.getBoundingClientRect();
+  return rect.bottom > 0 && rect.top < (window.innerHeight - 100||
+    document.documentElement.clientHeight - 100);
+}
