@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
-const navLogo = document.querySelector('#navbar-logotxt');
 
 // Display Mobile Menu
 const mobileMenu = () => {
@@ -31,13 +30,11 @@ document.addEventListener('scroll', () =>{
 })
 document.addEventListener('scroll', () =>{
   var pathname = window.location.href;
-  const header = document.querySelector('#dropdown-menu');
-  if(pathname == 'https://basboerboom.nl/index.html' || 'https://basboerboom.nl/'){
-    if(window.scrollY > 0){
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
+  const header = document.querySelector('.navbar__menu');
+  if(window.scrollY > 0){
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
   }
 })
 

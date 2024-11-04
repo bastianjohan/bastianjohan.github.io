@@ -7,7 +7,6 @@ class FooterComponent extends HTMLElement {
       <footer>
         <div class="footer__container">
           <div class="footer__links">
-            <div class="footer__link--wrapper">
               <div class="footer__link--items">
                 <h2>Pages</h2>
                 <a href="/">Home</a>
@@ -22,23 +21,20 @@ class FooterComponent extends HTMLElement {
                 <a href="/Games">Games</a>
                 <a href="/Shortfilm">Short Film</a>
               </div>
-            </div>
           </div>
           <section class="social__media">
-            <div class="social__media--wrap">
               <div class="footer__logo">
                 <a href="/" id="footer__logo">Bas Boerboom</a>
               </div>
               <p class="website__rights">bas.boerboom@hotmail.com | KvK: 94987637</p>
               <p class="website__rights">© Bas Boerboom 2023-2024. All rights reserved</p>
               <div class="social__icons">
-                <a href="https://www.instagram.com/bastianjohanmusic/" class="social__icon--link"><img class="social__icon--style" src="Socials/4202090_instagram_logo_social_social media_icon.png" alt="Instagram"></a>
+                <a href="https://www.instagram.com/bastianjohanmusic/"><img class="social__icon--style" src="Socials/4202090_instagram_logo_social_social media_icon.png" alt="Instagram"></a>
                 <a href="" class="social__icon--link"><img class="social__icon--style" src="Socials/4202000_tweet_twitter_logo_social_social media_icon.png" alt="Twitter"></a>
-                <a href="https://www.facebook.com/bas.boerboom.9/" class="social__icon--link"><img class="social__icon--style" src="Socials/logo-facebookpng-32204.png" alt="Facebook"></a>
-                <a href="https://www.youtube.com/@basboerboom9328" class="social__icon--link"><img class="social__icon--style" src="Socials/4202041_video_youtube_logo_social_social media_icon.png" alt="Youtube"></a>
-                <a href="https://open.spotify.com/artist/5CMJEBnmSphZLKjbpBJIH8?si=GPABIxnLRGaYuXZNiNl1kg" class="social__icon--link"><img class="social__icon--style" src="Socials/4202068_spotify_logo_social_social media_icon.png" alt="Spotify"></a>
+                <a href="https://www.facebook.com/bas.boerboom.9/"><img class="social__icon--style" src="Socials/logo-facebookpng-32204.png" alt="Facebook"></a>
+                <a href="https://www.youtube.com/@basboerboom9328"><img class="social__icon--style" src="Socials/4202041_video_youtube_logo_social_social media_icon.png" alt="Youtube"></a>
+                <a href="https://open.spotify.com/artist/5CMJEBnmSphZLKjbpBJIH8?si=GPABIxnLRGaYuXZNiNl1kg"><img class="social__icon--style" src="Socials/4202068_spotify_logo_social_social media_icon.png" alt="Spotify"></a>
               </div>
-            </div>
           </section>
         </div>
       </footer>
@@ -52,7 +48,7 @@ class NavbarBBComponent extends HTMLElement {
     this.innerHTML = `
       <nav class="navbar">
         <div class="navbar__container">
-          <a href="/" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">as Boerboom</a> 
+          <a href="/" id="navbar-logotxt"><img src="Pictures/Logo_PNG_Crop.png" alt="Logo" id="navbar-logo">as Boerboom</a>
           <div class="navbar__toggle" id="mobile-menu">
             <span class="bar"></span>
             <span class="bar"></span>
