@@ -47,6 +47,8 @@ body {
 	background-position: center;
   box-shadow: inset 0 0 200vw 0 rgba(0, 0, 0, 1);
   transition: opacity 1s ease-in-out;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 strong, p, li {

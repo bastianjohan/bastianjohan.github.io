@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar__menu');
 
-// Display Mobile Menu
 const mobileMenu = () => {
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
@@ -20,46 +19,34 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
-document.addEventListener('scroll', () =>{
-  const header = document.querySelector('.navbar');
-  if(window.scrollY > 0){
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-})
-document.addEventListener('scroll', () =>{
-  var pathname = window.location.href;
-  const header = document.querySelector('.navbar__menu');
-  if(window.scrollY > 0){
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-})
+function isInView(element){
+  const rect = element.getBoundingClientRect();
+  return rect.bottom > 0 && rect.top < (window.innerHeight - 100 ||
+    document.documentElement.clientHeight - 100);
+}
+
+const navbar = document.querySelector('.navbar');
+const navbarMenu = document.querySelector('.navbar__menu');
+const heroH3 = document.querySelector('.hero h3');
+const heroH2 = document.querySelector('.hero h2');
 
 const flyersContent = document.querySelectorAll(".flyer__content");
 const flyersImg = document.querySelectorAll(".flyer__image");
 
-document.addEventListener('scroll', function(){
+document.addEventListener('scroll', () => {
+  const scrolled = window.scrollY > 0;
+
+  if (navbar) navbar.classList.toggle('scrolled', scrolled);
+  if (navbarMenu) navbarMenu.classList.toggle('scrolled', scrolled);
+  if (heroH3) heroH3.classList.toggle('scrolled', scrolled);
+  if (heroH2) heroH2.classList.toggle('scrolled', scrolled);
+
   flyersContent.forEach(flyer => {
-    if(isInView(flyer)){
-      flyer.classList.add("visible");
-    } else {
-      flyer.classList.remove("visible");
-    }
+    const inView = isInView(flyer);
+    if (flyersContent) flyer.classList.toggle("visible", inView);
   })
   flyersImg.forEach(flyerImg => {
-    if(isInView(flyerImg)){
-      flyerImg.classList.add("visible");
-    } else {
-      flyerImg.classList.remove("visible");
-    }
+    const inView = isInView(flyerImg);
+    if (flyersImg) flyerImg.classList.toggle("visible", inView);
   })
 })
-
-function isInView(element){
-  const rect = element.getBoundingClientRect();
-  return rect.bottom > 0 && rect.top < (window.innerHeight - 100||
-    document.documentElement.clientHeight - 100);
-}

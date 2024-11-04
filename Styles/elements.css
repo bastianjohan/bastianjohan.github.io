@@ -4,7 +4,11 @@
   align-items: center;
   text-align: center;
   height: calc(100vh - 5rem);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: 0.6s ease-out;
 }
+
 
 .hero h3 {
   margin: auto 2rem;
@@ -16,6 +20,11 @@
   color: var(--nearwhite);
   letter-spacing: 1.6rem;
   font-weight: 100;
+  transition: 0.3s ease-out;
+}
+.hero h3.scrolled {
+  transform: translateY(-200px);
+  transition: 1s;
 }
 
 .hero h2 {
@@ -26,6 +35,11 @@
   color: var(--nearwhite);
   letter-spacing: 1rem;
   font-weight: 100;
+  transition: 1s;
+}
+.hero h2.scrolled {
+  opacity: 0;
+  transition: 1s;
 }
 
 @media screen and (min-width: 1200px) {
@@ -107,7 +121,7 @@
 
 @media screen and (min-width: 1200px) {
   .flyer__content {
-    transform: translateX(40px);
+    transform: translateX(3rem);
     opacity: 0;
     transition: 1s ease;
   } 
@@ -117,7 +131,7 @@
   }
 
   .flyer__image {
-    transform: translateY(20px);
+    transform: translateY(2rem);
     opacity: 0;
     transition: 1s ease;
   }
@@ -190,6 +204,7 @@
 
   .flyer__btn {
     margin: 2rem -1rem;
+    padding: 1rem;
   }
 }
 
@@ -211,6 +226,9 @@
     margin: 0rem auto;
     padding: 1rem;
   }
+  .flyer__btn a {
+    font-size: 1rem
+  }
 }
 
 .cardrow {
@@ -229,6 +247,8 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: 425px;
   gap: 3rem;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 
 .cardrow__card {
@@ -237,9 +257,16 @@
   justify-content: center;
   border-radius: 10px;
   width: 100%;
-  color: #fff;
+  color: var(--nearwhite);
   transition: 0.3s ease-out;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.cardrow__card:hover {
+  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.5);
+  transform: translateZ(2rem);
+  transition: 0.1s ease-in;
+  cursor: pointer;
 }
 
 .cardrow a {
@@ -251,13 +278,6 @@
   background-size: cover;
   background-position: center;
   overflow: hidden;
-}
-
-.cardrow__card:hover {
-  box-shadow: 5px 5px 12px 0 rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
-  transition: 0.1s ease-in;
-  cursor: pointer;
 }
 
 #cardrow-card1 {
