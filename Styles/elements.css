@@ -9,14 +9,13 @@
   transition: 0.6s ease-out;
 }
 
-
 .hero h3 {
   margin: auto 2rem;
   padding: 0.25rem 0;
   width: calc(100% - 4rem);
   border-radius: 10px;
   background-color: var(--inkblue);
-  font-size: clamp(1rem, 3.5vw, 4rem);
+  font-size: clamp(1.6rem, 3.5vw, 4rem);
   color: var(--nearwhite);
   letter-spacing: 1.6rem;
   font-weight: 100;
@@ -348,6 +347,16 @@
 }
 .mediablock-right, .mediablock-center {
   flex-direction: row;
+}
+
+.mediablock-left, .mediablock-right { 
+  animation: fade-in linear;
+  animation-timeline: view();
+}
+
+@keyframes fade-in {
+  0%, 100% {scale: .97; opacity: 0;}
+  25%, 70% { scale: 1; opacity: 1; }
 }
 
 .mediablock__text {

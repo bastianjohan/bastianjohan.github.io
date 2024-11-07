@@ -90,7 +90,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 3rem;
+  height: 2.6rem;
 }
 
 #navbar-logotxt {
@@ -100,7 +100,7 @@ h1 {
   color: var(--nearwhite);  
   text-decoration: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.4rem;
 }
 
 #navbar-logotxt:hover {
@@ -109,7 +109,7 @@ h1 {
 }
 
 #navbar-logo {
-  height: 3rem;
+  height: 2.6rem;
   margin-right: 0.25rem;
 }
 
@@ -123,7 +123,7 @@ h1 {
   color: var(--nearwhite);
   display: flex;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
