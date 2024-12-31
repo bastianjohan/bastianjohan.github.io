@@ -526,3 +526,36 @@
     padding: 0.8rem;
   }
 }
+
+.gallery__container {
+  width: 100%;
+  max-width: 1800px;
+  padding: 4rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: masonry;
+  gap: 3rem;
+}
+
+.gallery__box {
+  width: 100%;
+}
+
+.gallery__box img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .gallery__container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .gallery__container {
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
