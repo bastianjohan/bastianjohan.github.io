@@ -241,13 +241,24 @@
 
 .cardrow__wrapper {
   width: 100%;
+  height: 100%;
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 425px;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   gap: 3rem;
   transform-style: preserve-3d;
   transform: perspective(1000px);
+}
+
+.media__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.media__item iframe {
+	aspect-ratio: 16 / 9;
 }
 
 .cardrow__card {
@@ -298,15 +309,20 @@
   }
 }
 
-@media screen and (max-width: 640px) {  
+@media screen and (max-width: 992px) {  
   .cardrow {
     padding: 2rem;
   }
   .cardrow__wrapper {
     grid-template-columns: 1fr;
-    grid-auto-rows: 325px;
-    gap: 2rem;
   }
+
+  	.media__item {
+		min-width: 0;
+		width: 100%;
+  		max-width: 100%;
+  		height: auto;
+	}
 }
 
 .work__title h2 {
@@ -559,3 +575,4 @@
     gap: 1rem;
   }
 }
+

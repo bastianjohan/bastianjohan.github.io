@@ -79,9 +79,6 @@ class NavbarBJComponent extends HTMLElement {
           </div>
           <ul class="navbar__menu">
             <li class="navbar__item">
-              <span onclick="transitionToPage('/bastianjohan_yt')" class="navbar__links">Videos</span>
-            </li>
-            <li class="navbar__item">
               <span onclick="transitionToPage('/')" class="navbar__links">Bas Boerboom</span>
             </li>
           </ul>
