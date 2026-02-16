@@ -260,6 +260,9 @@
 .media__item iframe {
 	aspect-ratio: 16 / 9;
 }
+.media__item-video {
+	margin-bottom: 1rem;
+}
 
 .cardrow__card {
   display: flex;
