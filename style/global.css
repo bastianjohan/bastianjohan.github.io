@@ -1,0 +1,81 @@
+@font-face {
+  	font-family: quicksand;
+  	src: url(fonts/Quicksand-VariableFont_wght.ttf) format('truetype');
+  	font-weight: 300 800;
+  	font-style: normal;
+}
+
+@font-face {
+  	font-family: merriweatherSans;
+  	src: url(fonts/MerriweatherSans-VariableFont_wght.ttf) format('truetype');
+  	font-weight: 300 800;
+  	font-style: normal;
+}
+@font-face {
+  	font-family: merriweatherSans;
+  	src: url(fonts/MerriweatherSans-Italic-VariableFont_wght.ttf) format('truetype');
+  	font-weight: 300 800;
+  	font-style: italic;
+}
+
+:root {
+	--mossgreen: #606C38;
+	--highland: #708F53;
+  	--forestgreen: #283618;
+  	--cornsilk: #FEFAE0;
+ 	--earthyellow: #DDA15E;
+	--terra: #BC6C25;
+}
+
+* {
+	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+  	letter-spacing: 1px;
+}
+
+html {
+  	margin: 0;
+  	padding: 0;
+  	overflow-x: hidden;
+  	overflow-y: scroll;
+  	scroll-snap-type: y proximity;
+  	scroll-behavior: smooth;
+}
+
+body {
+  	background-color: black;
+  	background-image:
+    	radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
+    	url("../src/pictures/Achtergrond.jpg");
+  	background-attachment: fixed;
+  	background-size: cover;
+	background-position: center;
+}
+
+h1 {
+  	font-family: merriweatherSans;
+  	font-size: normal;
+  	font-weight: 600;
+	font-size: clamp(1.5rem, 5vw, 3rem);
+	color: var(--forestgreen);
+}
+
+h2 {
+  	font-family: quicksand;
+  	font-size: normal;
+  	font-weight: 600;
+}
+
+h3 {
+  	font-family: merriweatherSans;
+  	font-size: normal;
+  	font-weight: 300;
+}
+
+p {
+  	font-family: quicksand;
+  	font-size: normal;
+	font-weight: 400;
+	font-size: clamp(1rem, 2vw, 1.5rem);
+}
