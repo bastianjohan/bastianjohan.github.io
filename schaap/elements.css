@@ -5,14 +5,26 @@
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-image:
-    	radial-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
-    	url("../schaap/pictures/Achtergrond_Lente.jpeg");
-		background-attachment: fixed;
-		background-size: cover;
-		background-position: top left;
-		background-repeat: no-repeat;
-		outline: 3px solid red;
+	height: 100dvh;
+	width: 100%;
+}
+
+.bg_img {
+  position: fixed;
+	inset: 0;
+  object-fit: cover;
+	object-position: top left;
+  z-index: -2;
+}
+
+.bg_gradient {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.3)
+  );
+  z-index: -1;
 }
 
 .navbar {
@@ -20,6 +32,7 @@
 	position: absolute;
 	top: 0;
 	height: 12vh;
+	height: 12dvh;
 	justify-content: center;
 	align-items: center;
 	padding: 0rem;
@@ -78,6 +91,10 @@
 	z-index: 20;
 	background-color: transparent;
 }
+
+/* #flip {
+	transform: scaleX(-1);
+} */
 
 /* article card */
 
